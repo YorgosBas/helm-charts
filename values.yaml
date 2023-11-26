@@ -1,0 +1,10 @@
+replicaCount: 2
+
+image:
+  repository: hashicorp/http-echo
+  pullPolicy: IfNotPresent
+  tag: "0.2.1"
+
+service:
+  type: NodePort
+  port: 8081
