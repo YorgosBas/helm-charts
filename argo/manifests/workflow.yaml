@@ -1,0 +1,18 @@
+project: wefox
+source:
+  repoURL: 'https://yorgosbas.github.io/helm-charts/'
+  targetRevision: 0.1.0
+  helm:
+    valueFiles:
+      - values.yaml
+    parameters:
+      - name: image.tag
+        value: 0.2.3
+  chart: http-echo
+destination:
+  server: 'https://kubernetes.wefox.svc'
+  namespace: http-echo
+syncPolicy:
+  syncOptions:
+    - CreateNamespace=true
+    - PruneLast=true
