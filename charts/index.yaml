@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  http-echo:
+  - apiVersion: v2
+    appVersion: 0.2.1
+    created: "2023-11-27T02:25:51.3998069+02:00"
+    description: A Helm chart for the http-echo service
+    digest: 87715dcd17021239aebc169a1baa6c5e7678fdf4ba4ee5ed28cc7171e1e4356a
+    name: http-echo
+    type: application
+    urls:
+    - https://yorgosbas.github.io/helm-charts/charts/http-echo-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-11-27T02:25:51.3973496+02:00"
