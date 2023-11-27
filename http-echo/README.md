@@ -20,6 +20,10 @@ The following table lists the configurable parameters of the `http-echo` chart a
 
 ```helm install my-http-echo my-helm-charts/http-echo --set replicaCount=3```
 
+### Exposing the service
+Once deployed you can access the service with 
+```kubectl port-forward svc/http-echo-svc-name -n http-echo 8081```. However it would be better to set up an ingress for production use
+
 ## Uninstalling the Chart
 To uninstall/delete the my-http-echo deployment:
 
