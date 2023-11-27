@@ -9,11 +9,11 @@ spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      {{- include "http-echo.selectorLabels" . | nindent 6 }}
+      app: {{ .Release.Name }}-http-echo
   template:
     metadata:
       labels:
-        {{- include "http-echo.selectorLabels" . | nindent 8 }}
+        app: {{ .Release.Name }}-http-echo
     spec:
       containers:
         - name: http-echo
